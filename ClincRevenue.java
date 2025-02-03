@@ -6,15 +6,19 @@ public class ClincRevenue {
         int totalIncome = 0;
 
         System.out.println("Enter age value (press Enter without a value to stop):");
-        for(int i=0; i<5;i++) {
+        for(int i=0; i<20;i++) {
 
             a[i] = input.nextInt();
+            if(a[i]==0){break;}
             if (a[i] < 17) {
                 totalIncome = 200 + totalIncome;
-            } else if (a[i] <= 17 || a[i] < 40) {
+            } else if (a[i] <= 17 && a[i] < 40) {
                 totalIncome = 400 + totalIncome;
             } else if (a[i] > 40) {
                 totalIncome = 300 + totalIncome;
+            }
+            else{
+                System.out.println("INVALID INPUT!");
             }
         }
 
@@ -22,4 +26,6 @@ public class ClincRevenue {
 
     }
 }
+
+
 
