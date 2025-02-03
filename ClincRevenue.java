@@ -14,7 +14,7 @@ public class ClincRevenue {
                 totalIncome = 200 + totalIncome;
             } else if (a[i] <= 17 && a[i] < 40) {
                 totalIncome = 400 + totalIncome;
-            } else if (a[i] > 40) {
+            } else if (a[i] >= 40) {
                 totalIncome = 300 + totalIncome;
             }
             else{
